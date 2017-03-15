@@ -1,0 +1,312 @@
+/*PRE-LOADER*/
+
+#load1 {
+    color:white;
+    letter-spacing: 3px;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    pointer-events: none;
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+
+
+
+    z-index: 1001;
+    pointer-events:none;
+}
+
+
+#container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -10px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+}
+#container span{
+  display: block;
+  background: #ffffff;
+  width: 100px;
+  height: 5px;
+  margin-top: 5px;
+  animation: load 2s infinite;
+  border-radius: 5px;
+}
+
+#container span:nth-child(2){animation-delay: 100ms;}
+#container span:nth-child(3){animation-delay: 200ms;}
+
+@keyframes load{
+  50%{
+    width: 5px;
+    margin-right: 95px;
+    opacity: .1;
+  }
+}
+
+
+  
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #232323;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(-100%);  /* IE 9 */
+                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateX(100%);  /* IE 9 */
+                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+        pointer-events: none;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+    
+ 
+
+
+/*TITLE*/
+
+.hero1 {
+    height: 1450px;
+    
+}
+
+#canvas {
+    position: relative;
+    top:-200px;
+}
+
+
+
+h1:hover {
+	
+color: #ffb64d;
+transition: color 0.5s;
+}
+
+
+
+#p1 {
+	text-align: center;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	color:dimgrey;
+    letter-spacing: 1px;
+	-webkit-animation-delay: 2s;;
+}
+
+
+/*NAV BAR*/
+
+.nav-main {
+    list-style:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+
+a {
+    display: inline-block;
+    font-family: 'Amiko', sans-serif;
+}
+
+
+a, a:visited {
+    display:block;
+    text-align: center;
+    font-size: 10px;
+    text-transform:uppercase;
+    color: black;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    color:firebrick;
+    text-decoration:none;
+}
+
+
+
+.top, .left, .right {
+    position:absolute;
+}
+
+.top {
+    left:20%;
+}
+
+
+.left {
+    transform:rotate(90deg);
+    right: 47px;
+    top: 10%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+.right {
+    transform:rotate(90deg);
+    right: 40px;
+    top: 20%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+
+
+    
+    
+    
+
+
+
+/*FOLLOW THE WHITE RABBIT*/
+
+
+#scrolldown {
+  top: 675px;
+  height: 200px;
+  margin-left: -50px;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  width: 100px;
+  z-index: 100;
+}
+#scrolldown p {
+  font: 700 0.7em/1em 'Avenir',sans-serif;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  color: #000;
+}
+#scrolldown > p {
+  text-transform: uppercase;
+  text-indent: 3px;
+}
+.mouse {
+  border: 2px solid #000;
+  border-radius: 13px;
+  display: block;
+  height: 46px;
+  left: 50%;
+  margin: 10px 0 0 -13px;
+  position: absolute;
+  width: 26px;
+}
+.mouse span {
+  display: block;
+  font-size: 1.5em;
+  margin: 6px auto;
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+
+
+
+
+.terminal {
+    position:relative;
+	font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 12px;
+	color:orangered;
+    left: 9%;
+    top: -30%;
+  margin-left: x;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.4);
+  width: 400px;
+    
+}
+
+.terminal span {
+    color: black;
+}
+    
+.dollar:before {
+  content: '$';
+  color: #000000;
+}
+
+
+
+.design1 {
+    font-family: 'Amiko', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    margin-left: 750px;
+    margin-bottom: 200px;
+    
+}
+
