@@ -62,7 +62,7 @@ input.keypress(function(e) {
 		} else if (inputVal.startsWith("exit") === true) {
 			Output('<span class="blue">Goodbye! Comeback soon.</span>');
 			setTimeout(function() {
-				window.open('http://codepen.io/MarioDesigns');
+				window.open('http://www.instagram.com/artbyadamriguez');
 			}, 1000);
 		} else {
 			Output('<span>command not found</span></br>');
@@ -113,14 +113,14 @@ function sudo(data) {
 	} else if (data.startsWith("apt-get") === true) {
 		data = "<span class='green'>Updating...</span> The cake is a lie! There is nothing to update..."
 	} else {
-		data = "The force is week within you, my master you not be!"
+		data = "The force is weak with you..."
 	}
 	Output('<span>' + data + '</span></br>');
 }
 
 // function to get current time...not
 function getTime() {
-	Output('<span>It\'s the 21st century man! Get a SmartWatch</span></br>');
+	Output('<span>tbh if you asked for the time you can just look at your phone or screen in the top right corner, just being honest</span></br>');
 }
 
 function aboutMe() {
